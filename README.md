@@ -52,8 +52,8 @@ Prettier (`.prettierrc`):
     "lint:js:fix": "eslint . --ext .js,.jsx --fix",
     "lint:css": "stylelint \"**/*.{css,scss}\"",
     "lint:css:fix": "stylelint \"**/*.{css,scss}\" --fix",
-    "format": "prettier . --check",
-    "format:fix": "prettier . --write",
+    "format": "prettier \"**/*.{js,jsx,ts,tsx,css,scss,html,json,md}\" --check",
+    "format:fix": "prettier \"**/*.{js,jsx,ts,tsx,css,scss,html,json,md}\" --write",
     "lint": "run-s lint:js lint:css format",
     "lint:fix": "run-s lint:js:fix lint:css:fix format:fix"
   }
