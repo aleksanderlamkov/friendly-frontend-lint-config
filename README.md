@@ -36,9 +36,11 @@ import config from 'friendly-frontend-lint-config/stylelint'
 export default config
 ```
 
-Prettier (`.prettierrc`):
+Prettier (`prettier.config.js`):
 ```yaml
-"friendly-frontend-lint-config/prettier"
+import config from 'friendly-frontend-lint-config/prettier'
+
+export default config
 ```
 
 ## Рекомендуемые скрипты
