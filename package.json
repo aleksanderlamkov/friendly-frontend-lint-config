@@ -9,7 +9,7 @@
     "./prettier": "./prettier.config.js"
   },
   "files": [
-    "eslint.config.mjs",
+    "eslint.config.js",
     "stylelint.config.mjs",
     "prettier.config.js",
     ".prettierignore"
