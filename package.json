@@ -12,7 +12,7 @@
     "eslint.config.mjs",
     "stylelint.config.mjs",
     ".prettierrc",
-    "postinstall-message.js"
+    "postinstall-message.sh"
   ],
   "keywords": [
     "eslint",
@@ -24,7 +24,7 @@
   "author": "Aleksander Lamkov",
   "license": "MIT",
   "scripts": {
-    "postinstall": "node postinstall-message.js",
+    "postinstall": "sh ./postinstall-message.sh",
     "publish:next": "npm version prerelease --preid=next && npm publish --tag next",
     "publish:latest": "npm version patch && npm publish"
   },
