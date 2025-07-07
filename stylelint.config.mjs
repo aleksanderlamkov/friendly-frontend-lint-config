@@ -1,4 +1,7 @@
-/** @type {import('stylelint').Config} */
+/**
+ * @see https://stylelint.io/user-guide/configure/
+ * @type {import('stylelint').Config}
+ */
 export default {
   defaultSeverity: 'warning',
   extends: ['stylelint-config-standard-scss'],
