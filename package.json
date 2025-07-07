@@ -1,6 +1,6 @@
 {
   "name": "friendly-frontend-lint-config",
-  "version": "1.0.1-next.7",
+  "version": "1.0.1-next.8",
   "description": "Общие конфигурации для линтеров и форматтеров во фронтенд-проектах",
   "type": "module",
   "exports": {
