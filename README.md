@@ -7,38 +7,38 @@
 
 NPM:
 ```bash
-npm install -D @a1rth/friendly-frontend-lint-config @babel/eslint-parser@7.28.0 @babel/plugin-syntax-jsx@7.27.1 @eslint/js@9.30.1 eslint@9.30.1 eslint-config-prettier@10.1.5 eslint-plugin-jsx-a11y@6.10.2 eslint-plugin-prettier@5.5.1 eslint-plugin-react@7.37.5 eslint-plugin-react-hooks@5.2.0 globals@16.3.0 prettier@3.6.2 stylelint@16.21.0 stylelint-config-standard-scss@15.0.1 stylelint-order@7.0.0 stylelint-scss@6.12.1 stylelint-selector-bem-pattern@4.0.1
+npm install -D friendly-frontend-lint-config @babel/eslint-parser@7.28.0 @babel/plugin-syntax-jsx@7.27.1 @eslint/js@9.30.1 eslint@9.30.1 eslint-config-prettier@10.1.5 eslint-plugin-jsx-a11y@6.10.2 eslint-plugin-prettier@5.5.1 eslint-plugin-react@7.37.5 eslint-plugin-react-hooks@5.2.0 globals@16.3.0 prettier@3.6.2 stylelint@16.21.0 stylelint-config-standard-scss@15.0.1 stylelint-order@7.0.0 stylelint-scss@6.12.1 stylelint-selector-bem-pattern@4.0.1
 ```
 
 Yarn:
 ```bash
-yarn add -D @a1rth/friendly-frontend-lint-config @babel/eslint-parser@7.28.0 @babel/plugin-syntax-jsx@7.27.1 @eslint/js@9.30.1 eslint@9.30.1 eslint-config-prettier@10.1.5 eslint-plugin-jsx-a11y@6.10.2 eslint-plugin-prettier@5.5.1 eslint-plugin-react@7.37.5 eslint-plugin-react-hooks@5.2.0 globals@16.3.0 prettier@3.6.2 stylelint@16.21.0 stylelint-config-standard-scss@15.0.1 stylelint-order@7.0.0 stylelint-scss@6.12.1 stylelint-selector-bem-pattern@4.0.1
+yarn add -D friendly-frontend-lint-config @babel/eslint-parser@7.28.0 @babel/plugin-syntax-jsx@7.27.1 @eslint/js@9.30.1 eslint@9.30.1 eslint-config-prettier@10.1.5 eslint-plugin-jsx-a11y@6.10.2 eslint-plugin-prettier@5.5.1 eslint-plugin-react@7.37.5 eslint-plugin-react-hooks@5.2.0 globals@16.3.0 prettier@3.6.2 stylelint@16.21.0 stylelint-config-standard-scss@15.0.1 stylelint-order@7.0.0 stylelint-scss@6.12.1 stylelint-selector-bem-pattern@4.0.1
 ```
 
 PNPM:
 ```bash
-pnpm add -D @a1rth/friendly-frontend-lint-config @babel/eslint-parser@7.28.0 @babel/plugin-syntax-jsx@7.27.1 @eslint/js@9.30.1 eslint@9.30.1 eslint-config-prettier@10.1.5 eslint-plugin-jsx-a11y@6.10.2 eslint-plugin-prettier@5.5.1 eslint-plugin-react@7.37.5 eslint-plugin-react-hooks@5.2.0 globals@16.3.0 prettier@3.6.2 stylelint@16.21.0 stylelint-config-standard-scss@15.0.1 stylelint-order@7.0.0 stylelint-scss@6.12.1 stylelint-selector-bem-pattern@4.0.1
+pnpm add -D friendly-frontend-lint-config @babel/eslint-parser@7.28.0 @babel/plugin-syntax-jsx@7.27.1 @eslint/js@9.30.1 eslint@9.30.1 eslint-config-prettier@10.1.5 eslint-plugin-jsx-a11y@6.10.2 eslint-plugin-prettier@5.5.1 eslint-plugin-react@7.37.5 eslint-plugin-react-hooks@5.2.0 globals@16.3.0 prettier@3.6.2 stylelint@16.21.0 stylelint-config-standard-scss@15.0.1 stylelint-order@7.0.0 stylelint-scss@6.12.1 stylelint-selector-bem-pattern@4.0.1
 ```
 
 ## Использование
 
 ESLint (`eslint.config.js`):
 ```javascript
-import config from '@a1rth/friendly-frontend-lint-config/eslint'
+import config from 'friendly-frontend-lint-config/eslint'
 
 export default config
 ```
 
 Stylelint (`stylelint.config.js`):
 ```javascript
-import config from '@a1rth/friendly-frontend-lint-config/stylelint'
+import config from 'friendly-frontend-lint-config/stylelint'
 
 export default config
 ```
 
 Prettier (`.prettierrc`):
 ```yaml
-"@a1rth/friendly-frontend-lint-config/prettier"
+"friendly-frontend-lint-config/prettier"
 ```
 
 ## Рекомендуемые скрипты
