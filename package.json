@@ -4,13 +4,13 @@
   "description": "Общие конфигурации для линтеров и форматтеров во фронтенд-проектах",
   "type": "module",
   "exports": {
-    "./eslint": "./eslint.config.mjs",
-    "./stylelint": "./stylelint.config.mjs",
+    "./eslint": "./eslint.config.js",
+    "./stylelint": "./stylelint.config.js",
     "./prettier": "./prettier.config.js"
   },
   "files": [
     "eslint.config.js",
-    "stylelint.config.mjs",
+    "stylelint.config.js",
     "prettier.config.js",
     ".prettierignore"
   ],
