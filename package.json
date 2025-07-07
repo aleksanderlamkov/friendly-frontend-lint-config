@@ -11,7 +11,8 @@
   "files": [
     "eslint.config.mjs",
     "stylelint.config.mjs",
-    ".prettierrc"
+    ".prettierrc",
+    "postinstall-message.js"
   ],
   "keywords": [
     "eslint",
