@@ -6,7 +6,7 @@
   "exports": {
     "./eslint": "./eslint.config.mjs",
     "./stylelint": "./stylelint.config.mjs",
-    "./prettier": "./.prettierrc"
+    "./prettier": "./prettier.config.js"
   },
   "files": [
     "eslint.config.mjs",
