@@ -11,8 +11,7 @@
   "files": [
     "eslint.config.js",
     "stylelint.config.js",
-    "prettier.config.js",
-    ".prettierignore"
+    "prettier.config.js"
   ],
   "keywords": [
     "eslint",
