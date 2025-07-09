@@ -17,7 +17,7 @@ pnpm-lock.yaml
 npm-debug.log*
 *.log
 
-# Выходные файлы (если появятся)
+# Выходные файлы
 dist
 build
 coverage
