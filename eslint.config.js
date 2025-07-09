@@ -12,6 +12,18 @@ import jsxA11yPlugin from 'eslint-plugin-jsx-a11y'
 export default defineConfig([
   {
     files: ['**/*.{js,jsx,mjs,cjs}'],
+    ignores: [
+      '**/node_modules/**',
+      '**/dist/**',
+      '**/build/**',
+      '**/coverage/**',
+      '**/*.log',
+      '**/npm-debug.log*',
+      '**/.git/**',
+      '**/.idea/**',
+      '**/.vscode/**',
+      '**/.DS_Store',
+    ],
     languageOptions: {
       parser: babelParser,
       parserOptions: {

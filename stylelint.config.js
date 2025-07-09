@@ -3,6 +3,18 @@
  * @type {import('stylelint').Config}
  */
 export default {
+  ignoreFiles: [
+    '**/node_modules/**',
+    '**/dist/**',
+    '**/build/**',
+    '**/coverage/**',
+    '**/*.log',
+    '**/npm-debug.log*',
+    '**/.git/**',
+    '**/.idea/**',
+    '**/.vscode/**',
+    '**/.DS_Store',
+  ],
   defaultSeverity: 'warning',
   extends: ['stylelint-config-standard-scss'],
   plugins: [
