@@ -115,46 +115,46 @@ coverage
 
 Чтобы ESLint корректно проверял .ts и .tsx файлы, необходимо:
 
-1. Установить дополнительные зависимости:
+1. **Установить дополнительные зависимости:**
 
-NPM:
-```bash
-npm install -D typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin
-```
+    NPM:
+    ```bash
+    npm install -D typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin
+    ```
+    
+    Yarn:
+    ```bash
+    yarn add -D typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin
+    ```
+    
+    PNPM:
+    ```bash
+    pnpm add -D typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin
+    ```
 
-Yarn:
-```bash
-yarn add -D typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin
-```
+2. **Обновить конфигурацию ESLint**
 
-PNPM:
-```bash
-pnpm add -D typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin
-```
+    Если вы используете `eslint.config.js` (ESLint Flat Config), добавьте в него следующие настройки:
+    ```javascript
+    import tsEslint from 'typescript-eslint'
+    import baseConfig from 'friendly-frontend-lint-config/eslint'
+    
+    export default [
+      ...baseConfig,
+      ...tsEslint.configs.recommended,
+    ]
+    ```
+    > 📦 typescript-eslint с версии 7 предоставляет Flat Config по умолчанию. Никаких дополнительных костылей не нужно.
 
-2. Обновить конфигурацию ESLint
+3. **Обновить маску файлов в скриптах**
 
-Если вы используете `eslint.config.js` (ESLint Flat Config), добавьте в него следующие настройки:
-```javascript
-import tsEslint from 'typescript-eslint'
-import baseConfig from 'friendly-frontend-lint-config/eslint'
-
-export default [
-  ...baseConfig,
-  ...tsEslint.configs.recommended,
-]
-```
-> 📦 typescript-eslint с версии 7 предоставляет Flat Config по умолчанию. Никаких дополнительных костылей не нужно.
-
-3. Обновить маску файлов в скриптах
-
-Если вы добавляете TypeScript в проект, рекомендуется расширить маску в `package.json`:
-```json
-{
-  "lint:js": "eslint . --ext .js,.jsx,.ts,.tsx",
-  "lint:js:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
-}
-```
+    Если вы добавляете TypeScript в проект, рекомендуется расширить маску в `package.json`:
+    ```json
+    {
+      "lint:js": "eslint . --ext .js,.jsx,.ts,.tsx",
+      "lint:js:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
+    }
+    ```
 
 ## Обратная связь
 Если нашли баг или хотите предложить улучшение — открывайте issue или присылайте pull request.
