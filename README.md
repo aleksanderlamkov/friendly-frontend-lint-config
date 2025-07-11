@@ -20,6 +20,8 @@ PNPM:
 pnpm add -D friendly-frontend-lint-config @babel/eslint-parser@7.28.0 @babel/plugin-syntax-jsx@7.27.1 @eslint/js@9.30.1 eslint@9.30.1 eslint-config-prettier@10.1.5 eslint-plugin-jsx-a11y@6.10.2 eslint-plugin-prettier@5.5.1 eslint-plugin-react@7.37.5 eslint-plugin-react-hooks@5.2.0 globals@16.3.0 prettier@3.6.2 stylelint@16.21.0 stylelint-config-standard-scss@15.0.1 stylelint-order@7.0.0 stylelint-scss@6.12.1 stylelint-selector-bem-pattern@4.0.1
 ```
 
+> TypeScript-зависимости устанавливаются отдельно — см. ниже
+
 ## Использование
 
 ESLint (`eslint.config.js`):
@@ -37,7 +39,7 @@ export default config
 ```
 
 Prettier (`prettier.config.js`):
-```yaml
+```javascript
 import config from 'friendly-frontend-lint-config/prettier'
 
 export default config
@@ -99,6 +101,7 @@ coverage
 **ESLint**:
 - `@eslint/js`, `eslint-plugin-react`, `eslint-plugin-react-hooks`, `eslint-plugin-jsx-a11y`
 - поддержка JSX через `@babel/eslint-parser` и `@babel/plugin-syntax-jsx`
+- поддержка TypeScript через `@typescript-eslint/parser` и `@typescript-eslint/eslint-plugin`
 - отключение конфликтов с Prettier через `eslint-config-prettier`
 
 > ⚠️ Конфигурация использует формат `eslint.config.js`, который поддерживается начиная с ESLint 9.
@@ -119,17 +122,17 @@ coverage
 
     NPM:
     ```bash
-    npm install -D typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin
+    npm install -D typescript typescript-eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
     ```
     
     Yarn:
     ```bash
-    yarn add -D typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin
+    yarn add -D typescript typescript-eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
     ```
     
     PNPM:
     ```bash
-    pnpm add -D typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin
+    pnpm add -D typescript typescript-eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
     ```
 
 2. **Обновить конфигурацию ESLint**
@@ -144,7 +147,7 @@ coverage
       ...tsEslint.configs.recommended,
     ]
     ```
-    > 📦 typescript-eslint с версии 7 предоставляет Flat Config по умолчанию. Никаких дополнительных костылей не нужно.
+    > 📦 Начиная с версии 7, typescript-eslint официально поддерживает Flat Config. Просто импортируйте typescript-eslint напрямую — и всё будет работать.
 
 3. **Обновить маску файлов в скриптах**
 
